@@ -283,7 +283,7 @@ dooropen(servo1)
 - 啟用
    - <img src="https://i.imgur.com/TnSGjl6.png" width="375">
 - 3. 新增憑證, 切換到憑證的頁面點選建立憑證的服務帳戶
-     <img src="https://i.imgur.com/KzblyuY.png" width="375">
+     - <img src="https://i.imgur.com/KzblyuY.png" width="375">
 - 沒有特殊需求就可以直接按繼續
      - <img src="https://i.imgur.com/QmrYUBR.png" width="375">
 - 這邊也是，沒有特殊需求就可以直接按繼續
