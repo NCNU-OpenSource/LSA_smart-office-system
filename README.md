@@ -8,12 +8,12 @@
 
 ## 使用設備
 
-1. RFID RC522
 
 ![](https://i.imgur.com/eWJEnu0.png)
 
 ![](https://i.imgur.com/RUixRIZ.jpg)
 
+1. RFID RC522
 ![](https://i.imgur.com/OyUmgGY.png)
 
 
