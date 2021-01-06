@@ -1,7 +1,7 @@
 # LSA_smart-office-system
 
 ## 建立Telegram Bot
-1. 先在手機商店下載Telegram Messenger
+1. 先在手機應用程式商店下載Telegram Messenger
 
 ![](https://i.imgur.com/7bTwXUU.jpg)
 
