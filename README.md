@@ -343,3 +343,13 @@ dooropen(servo1)
 7. 完成以上步驟後，BotFather 會在訊息中給予一組 token，我們需要把 token 放在所需要的程式中並運行起來，這樣 Telegram Bot 的基本設定就完成囉!
 
      - <img src="https://i.imgur.com/qLFsMHI.jpg" width="375">
+     
+## 在自身ubuntu主機設定 Mosquitto
+1. 安裝 Mosquitto ```sudo apt-get install mosquitto```
+2. 檢查是否順利安裝 ``` cd etc/mosquitto ```
+3. 在 conf檔案中新增2行Code ``` sudo vim mosquitto.conf  ```
+* ``` password_file /etc/mosquitto/passwd ```
+* ```allow anonymous true ```(為了方便運行而設成true)
+* broker的passwd的密碼耍有帳密才能進行訂閱
+* #allow anonymous false (不管自身publish還是subscribe的時侯都要有broker設定檔中的帳密)
+
