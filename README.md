@@ -1,8 +1,8 @@
 # LSA_smart-office-system
 
 ## Telegram Bot
-Bot name: Office Genie
-Bot id: @officetooladmin_bot
+* Bot name: Office Genie
+* Bot id: @officetooladmin_bot
 
 ## 動機
 
