@@ -108,13 +108,13 @@
 - SPI
   - <img src="https://i.imgur.com/bQ46ayo.png" width="375">
 - Enabled > Yes
-  - img src="https://i.imgur.com/B6WR94c.png" width="375">
+  - <img src="https://i.imgur.com/B6WR94c.png" width="375">
 - 重新開機
   - `sudo reboot`
 - 查是否正常啟動
   - `lsmod | grep spi`
   - 出現 spi_bcm2835 為成功
-  - ![](https://i.imgur.com/r11emNa.png)
+  - <img src="https://i.imgur.com/r11emNa.png" width="375">
 
 ### 安裝 Python
 
@@ -160,9 +160,9 @@ finally:
 - 運行 Python 檔案
   - `sudo python3 read.py`
 - 拍卡
-  - ![](https://i.imgur.com/jyjEAPd.jpg)
+  - <img src="https://i.imgur.com/jyjEAPd.jpg" width="375">
 - 讀取成功會出現卡片 ID
-  - ![](https://i.imgur.com/77mRPMf.png)
+  - <img src="https://i.imgur.com/77mRPMf.png" width="375">
 
 ### 連接 Servo Motor 到 Raspberry Pi
 
@@ -219,7 +219,7 @@ dooropen(servo1)
 
 - 運行 Python 檔案
   - `sudo python3 test_servomotor.py`
-  - ![](https://i.imgur.com/1Sad5a6.gif)
+  - <img src="https://i.imgur.com/1Sad5a6.gif" width="375">
 
 ### 上下班打卡及門禁系統
 
@@ -235,7 +235,7 @@ dooropen(servo1)
   - Input your name: (輸入員工姓名後按 Enter)
   - Now place your tag to write (用空白的 RFID 卡拍卡)
   - 完成後會出現 Data added successfully
-  - ![](https://i.imgur.com/DDJ1VwT.png)
+  - <img src="https://i.imgur.com/DDJ1VwT.png" width="375">
 
 - 門禁系統
 
@@ -244,12 +244,12 @@ dooropen(servo1)
   - Now place your tag to read (用已新增員工的 RFID 卡拍卡)
   - 成功後會出現 Login successfully 及 閘門將會打開
 
-    - ![](https://i.imgur.com/LWWpTLt.png)
-    - ![](https://i.imgur.com/amDNzNA.gif)
+    - <img src="https://i.imgur.com/LWWpTLt.png" width="375">
+    - <img src="https://i.imgur.com/amDNzNA.gif" width="375">
 
   - 如非本公司資料庫內的員工, 將會出現 Login failed 及 閘門不會開啟
-    - ![](https://i.imgur.com/AArB4wC.png)
-    - ![](https://i.imgur.com/NPEsThQ.gif)
+    - <img src="https://i.imgur.com/AArB4wC.png" width="375">
+    - <img src="https://i.imgur.com/NPEsThQ.gif" width="375">
 
 - 上下班打卡紀錄
   - 假如上面步驟出現 Login successfully 後, database 資料夾內會自動生成一個 company_record.db 檔案
