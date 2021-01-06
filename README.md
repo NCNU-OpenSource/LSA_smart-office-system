@@ -15,7 +15,7 @@
 
 
 1. RFID RC522
-![](https://i.imgur.com/OyUmgGY.png)
+- ![](https://i.imgur.com/OyUmgGY.png)
 
 
 | RC522 接口 | Raspberry Pi 接口 | 
