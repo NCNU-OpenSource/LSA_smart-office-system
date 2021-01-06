@@ -302,7 +302,7 @@ dooropen(servo1)
 - 1. 點選共用
      - <img src="https://i.imgur.com/FrItZhu.png" width="375">
 - 2. 輸入你剛剛申請的服務帳號信箱地址
-     - <img src="https://i.imgur.com/vmloQsj.png" width="375">
+     - <img src="https://i.imgur.com/K0cGABK.png" width="375">
 
 ### API 串接
 
