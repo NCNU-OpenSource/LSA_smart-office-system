@@ -27,13 +27,13 @@
 
 ## 使用設備
 
-![](https://i.imgur.com/eWJEnu0.png)
+   <img src="https://i.imgur.com/eWJEnu0.png" width="375">
 
-![](https://i.imgur.com/RUixRIZ.jpg)
+   <img src="https://i.imgur.com/RUixRIZ.jpg" width="375">
 
 1. RFID RC522
 
-- ![](https://i.imgur.com/OyUmgGY.png)
+   <img src="https://i.imgur.com/OyUmgGY.png" width="375">
 
 | RC522 接口 | Raspberry Pi 接口 |
 | ---------- | ----------------- |
@@ -46,8 +46,7 @@
 | SAD        | Pin24             |
 
 2. L9110 風扇模組
-   ![](https://i.imgur.com/i2cEcnK.png)
-
+   <img src="https://i.imgur.com/i2cEcnK.png" width="375">
 | 風扇模組 接口 | Raspberry Pi 接口 |
 | ------------- | ----------------- |
 | VCC (5v)      | 麵包板 +          |
@@ -57,7 +56,8 @@
 
 3. 雨水檢測
 
-- MH-RD - ![](https://i.imgur.com/9czppqf.png) -
+- MH-RD - 
+   <img src="https://i.imgur.com/9czppqf.png" width="375">
   | KY-016 接口 | Raspberry Pi 接口 |
   | -------- | -------- |
   | VCC (3.3v) | Pin 1 |
@@ -67,7 +67,7 @@
 4. 温度控制
 
 - 室內 DHT11 溫度/濕度感應器
-  - ![](https://i.imgur.com/QDvWYLq.jpg)
+  <img src="https://i.imgur.com/QDvWYLq.jpg" width="375">
 
 | 室內 DHT11 接口 | Raspberry Pi 接口 |
 | --------------- | ----------------- |
@@ -81,7 +81,7 @@
 | Ground (GDN)    | 麵包板 -          |
 | Signal (data)   | Pin 10            |
 
-![](https://i.imgur.com/BSKcvj2.png)
+<img src="https://i.imgur.com/BSKcvj2.png" width="375">
 
 | 零件名稱 | 價格   | 應用         |
 | -------- | ------ | ------------ |
@@ -92,8 +92,7 @@
 | L9110    | NT$150 | 訊號展示     |
 
 - breadboard layout:
-
-![](https://i.imgur.com/QztGPV8.jpg)
+<img src="https://i.imgur.com/QztGPV8.jpg" width="375">
 
 ## 使用技術
 
@@ -105,11 +104,11 @@
 - 進入 Raspberry Pi Config
   - `sudo raspi-config`
 - Interfacing Options
-  - ![](https://i.imgur.com/YBef2VM.png)
+  - <img src="https://i.imgur.com/YBef2VM.png" width="375">
 - SPI
-  - ![](https://i.imgur.com/bQ46ayo.png)
+  - <img src="https://i.imgur.com/bQ46ayo.png" width="375">
 - Enabled > Yes
-  - ![](https://i.imgur.com/B6WR94c.png)
+  - img src="https://i.imgur.com/B6WR94c.png" width="375">
 - 重新開機
   - `sudo reboot`
 - 查是否正常啟動
