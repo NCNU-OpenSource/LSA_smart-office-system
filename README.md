@@ -8,7 +8,25 @@
 
 ## 使用設備
 
-1. RFID
+1. RFID RC522
+
+![](https://i.imgur.com/eWJEnu0.png)
+
+![](https://i.imgur.com/RUixRIZ.jpg)
+
+![](https://i.imgur.com/OyUmgGY.png)
+
+
+| RC522 接口 | Raspberry Pi 接口 | 
+| -------- |  -------- |
+| 3.3v     | Pin17     | 
+| RST      | Pin22     | 
+| GDN      | Pin20     | 
+| MISO     | Pin21     | 
+| MOSI     | Pin19     | 
+| SCK      | Pin23     | 
+| SAD      | Pin24     | 
+
 
 2. L9110 風扇模組
 ![](https://i.imgur.com/i2cEcnK.png)
@@ -19,6 +37,7 @@
 | Ground (-) | 麵包板 -     | 
 | INA | Pin 16     | 
 | INB | Pin 18     | 
+
 
 3. 雨水檢測
 - MH-RD
@@ -41,7 +60,6 @@
 | Ground (GDN) | 麵包板 -     | 
 | Signal (data)| Pin 12    | 
 
-
 | 室外DHT11 接口 | Raspberry Pi 接口 | 
 | -------- | -------- | 
 | 5v (VCC)       | 麵包板 +      | 
@@ -57,7 +75,6 @@
 | Ground (-) | 麵包板 -     | 
 
 ![](https://i.imgur.com/BSKcvj2.png)
-
 
 | 零件名稱|價格|應用| 
 | -------- | -------- |  -------- |
