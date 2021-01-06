@@ -3,7 +3,7 @@
 ## Telegram Bot
 * Bot name: Office Genie
 * Bot id: @officetooladmin_bot
-![](https://i.imgur.com/NulvJMF.png)
+* ![](https://i.imgur.com/NulvJMF.png)
 ## 動機
 
 ## 使用設備
