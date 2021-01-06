@@ -45,8 +45,11 @@
 | SCK        | Pin23             |
 | SAD        | Pin24             |
 
+
 2. L9110 風扇模組
-   <img src="https://i.imgur.com/i2cEcnK.png" width="375">
+
+    <img src="https://i.imgur.com/i2cEcnK.png" width="375">
+    
 | 風扇模組 接口 | Raspberry Pi 接口 |
 | ------------- | ----------------- |
 | VCC (5v)      | 麵包板 +          |
