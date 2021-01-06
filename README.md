@@ -7,15 +7,16 @@
 ## 動機
 
 ## 使用設備
-![](https://i.imgur.com/BSKcvj2.png)
 
 1. RFID
 
 2. 溫度
 
-3. 紅外線(冷氣開關)
+3. 小風扇(當作冷氣)
 
 4. 感應水滴
+
+![](https://i.imgur.com/BSKcvj2.png)
 
 
 | 零件名稱|價格|應用| 
@@ -26,9 +27,10 @@
 | MH-RD | NT$50 | 雨滴感測 |
 | L9110 | NT$150 | 訊號展示 |
 
+* breadboard layout:
 
-## breadboard layout
 ![](https://i.imgur.com/QztGPV8.jpg)
+
 ## 使用技術
 
 ## 功能
