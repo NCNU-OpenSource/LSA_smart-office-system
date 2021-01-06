@@ -10,11 +10,51 @@
 
 1. RFID
 
-2. 溫度
+2. L9110 風扇模組
+![](https://i.imgur.com/i2cEcnK.png)
 
-3. 小風扇(當作冷氣)
+| 風扇模組 接口 | Raspberry Pi 接口 | 
+| -------- | -------- | 
+| VCC (5v)       | 麵包板 +      | 
+| Ground (-) | 麵包板 -     | 
+| INA | Pin 16     | 
+| INB | Pin 18     | 
 
-4. 感應水滴
+3. 雨水檢測
+- MH-RD
+    - ![](https://i.imgur.com/9czppqf.png)
+    - 
+| KY-016 接口 | Raspberry Pi 接口 | 
+| -------- | -------- | 
+| VCC (3.3v)       | Pin 1      | 
+| Ground (-) | 麵包板 -     | 
+| DO (data) | Pin 8     | 
+
+
+4. 温度控制
+- 室內DHT11 溫度/濕度感應器
+    - ![](https://i.imgur.com/QDvWYLq.jpg)
+
+| 室內DHT11 接口 | Raspberry Pi 接口 | 
+| -------- | -------- | 
+| 5v (VCC)       | 麵包板 +      | 
+| Ground (GDN) | 麵包板 -     | 
+| Signal (data)| Pin 12    | 
+
+
+| 室外DHT11 接口 | Raspberry Pi 接口 | 
+| -------- | -------- | 
+| 5v (VCC)       | 麵包板 +      | 
+| Ground (GDN) | 麵包板 -     | 
+| Signal (data)| Pin 10    | 
+
+- KY-016 RGB LED 模組
+    - ![](https://i.imgur.com/xuxnFlO.png)
+
+| KY-016 接口 | Raspberry Pi 接口 | 
+| -------- | -------- | 
+| R       | Pin 11      | 
+| Ground (-) | 麵包板 -     | 
 
 ![](https://i.imgur.com/BSKcvj2.png)
 
