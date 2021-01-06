@@ -57,8 +57,7 @@
 | INA           | Pin 16            |
 | INB           | Pin 18            |
 
-3. 雨水檢測
-
+3. 雨水檢測 
 - MH-RD - 
    <img src="https://i.imgur.com/9czppqf.png" width="375">
   | KY-016 接口 | Raspberry Pi 接口 |
@@ -67,9 +66,9 @@
   | Ground (-) | 麵包板 - |
   | DO (data) | Pin 8 |
 
-4. 温度控制
+4. 溫度控制
 
-- 室內 DHT11 溫度/濕度感應器
+- 室內 DHT11 溫度/濕度感應器  
   <img src="https://i.imgur.com/QDvWYLq.jpg" width="375">
 
 | 室內 DHT11 接口 | Raspberry Pi 接口 |
@@ -257,7 +256,7 @@ dooropen(servo1)
 - 上下班打卡紀錄
   - 假如上面步驟出現 Login successfully 後, database 資料夾內會自動生成一個 company_record.db 檔案
   - 將檔案匯出後使用[DB Browser for SQLite](https://sqlitebrowser.org/)瀏覽 company_record.db 檔案, 可發現已新增員工上下班紀錄
-  - <img src="https://i.imgur.com/gKfkUVK.png" width="375">
+  - <img src="https://i.imgur.com/gKfkUVK.png" >
 
 ## 匯出資料庫至 CSV
 
@@ -299,9 +298,9 @@ dooropen(servo1)
 
 ### Google Sheet API 開啟權限
 
-- 1. 點選共用
+- 1. 點選共用 
      - <img src="https://i.imgur.com/FrItZhu.png" width="375">
-- 2. 輸入你剛剛申請的服務帳號信箱地址
+- 2. 輸入你剛剛申請的服務帳號信箱地址 
      - <img src="https://i.imgur.com/K0cGABK.png" width="375">
 
 ### API 串接
@@ -309,7 +308,7 @@ dooropen(servo1)
 - 先在 pi 安裝套件
 - `pip install gspread`
 - `pip install oauth2client`
-- 查找 google sheet 網址, 將 google sheet 網址紅色地方複製
+- 查找 google sheet 網址, 將 google sheet 網址橘色地方複製
      - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/BDhE4pn.png)
 - 到`googlesheet_update.py`進行修改, 在第 17 行 spreadsheet_key_path 填入剛剛複製的紅色地方字串
      - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/cJDREbz.png)
