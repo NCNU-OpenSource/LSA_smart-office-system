@@ -370,6 +370,13 @@ dooropen(servo1)
 
 4. 安裝 mosquitto clients ``` sudo apt install mosquitto-clients ``` 
 
+## 在自身 ubuntu 主機設定 python
+
+1. 在家目錄下建一個dir ``` mkdir officetool ```
+2. 進入officetool dir ``` cd officetool ```
+3. 安裝虛擬環境 pipenv ``` sudo apt install pipenv ```
+4. 利用虛擬環境安裝
+
 ## 在pi 設定 mosquitto
 
 1. 先安裝 Mosquitto broker `sudo apt-get install mosquitto`
@@ -389,3 +396,18 @@ dooropen(servo1)
 - 設置帳密的方法同上(在365-369行)
 
 4. 安裝 mosquitto clients ``` sudo apt install mosquitto-clients ``` 
+
+## Raseberrypi 設置 pythpn
+
+1. 安裝python3 ```sudo apt install python3``` 
+
+2. 在家目錄建立dir ```mkdir officetool```
+
+3. 進入新建的dir ```cd officetool ```
+
+4. 把github中smart_office資料夾中的11個python檔案存放在officetool
+
+5. 手動更改以下兩個檔案中的ip地址為運行telegram bot的那台ip地址 
+* fan_manul.py (第30行)
+* temp_control_fan.py (第29行)
+
