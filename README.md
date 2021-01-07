@@ -348,7 +348,12 @@ dooropen(servo1)
 ## 在自身 ubuntu 主機設定 Mosquitto
 
 1. 安裝 Mosquitto `sudo apt-get install mosquitto`
+
 2. 檢查是否順利安裝 `cd etc/mosquitto` (看看這個資料夾底下有沒有設定檔)
+
 3. 在 conf 檔案中新增 2 行 Code `sudo vim mosquitto.conf ` (分別為放帳密的檔案的位置以及是否開啟匿名操作)
-- `password_file /etc/mosquitto/passwd` (放帳號與密碼的檔案，需要自己創建在/etc/mosquitto底下)
-- `allow anonymous true/false `(為了方便操作我們將它設成 true，如果關閉匿名的話，不管是訂閱方抑或是推送方皆要輸入帳密，帳密存在broker的帳密檔內，也就是上述的路徑 )
+- `password_file /etc/mosquitto/passwd` 
+放帳號與密碼的檔案，需要自己創建在/etc/mosquitto底下
+- `allow anonymous true/false `
+為了方便以下操作我們將它設成 true，如果將匿名設為false的話，不管是訂閱者或是推送者皆要輸入帳密才能向broker訂閱資料或推送資料，帳密儲存在broker的帳密檔內，也就是上面提到的路徑 
+- 
