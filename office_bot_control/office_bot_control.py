@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 def temperature():
-    p = subprocess.Popen("timeout 1 mosquitto_sub -h 10.32.21.35 -t temperature -u changlin -P qwe456uio", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
+    p = subprocess.Popen("timeout 1 mosquitto_sub -h <Broker's IP that you sub data> -t temperature", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
     tem = str(p)
     tem = tem.strip("b")
     tem = tem.strip("'")
@@ -31,7 +31,7 @@ def temperature():
     tem = tem.strip("\\")
     return "The inside temperature is: "+tem+" degree of C"
 def temperature_out():
-    p = subprocess.Popen("timeout 1 mosquitto_sub -h 10.32.21.35 -t temperature_out -u changlin -P qwe456uio", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
+    p = subprocess.Popen("timeout 1 mosquitto_sub -h <Broker's IP that you sub data> -t temperature_out", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
     tem = str(p)
     tem = tem.strip("b")
     tem = tem.strip("'")
@@ -40,7 +40,7 @@ def temperature_out():
     return "The outside temperature is: "+tem+" degree of C"
 
 def rain():
-    p = subprocess.Popen("timeout 1 mosquitto_sub -h 10.32.21.35 -t rain -u changlin -P qwe456uio", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
+    p = subprocess.Popen("timeout 1 mosquitto_sub -h <Broker's IP that you sub data> -t rain", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
     r = str(p)
     r = r.strip("b")
     r = r.strip("'")
@@ -53,14 +53,14 @@ def rain():
 def switch(input):
 
     if input == 'O':
-        os.system('timeout 1 mosquitto_pub -t switch -m '+input+' -u changlin03 -P qwe456uio')
+        os.system('timeout 1 mosquitto_pub -t switch -m '+input+'')
     elif input == 'F': 
-        os.system('timeout 1 mosquitto_pub -t switch -m '+input+' -u changlin03 -P qwe456uio')
+        os.system('timeout 1 mosquitto_pub -t switch -m '+input+'')
 def switch_auto(input):
     if input == 'O':
-        os.system('timeout 1 mosquitto_pub -t auto_switch -m '+input+' -u changlin03 -P qwe456uio')
+        os.system('timeout 1 mosquitto_pub -t auto_switch -m '+input+'')
     elif input == 'F':
-        os.system('timeout 1 mosquitto_pub -t auto_switch -m '+input+' -u changlin03 -P qwe456uio')
+        os.system('timeout 1 mosquitto_pub -t auto_switch -m '+input+'')
                 
 
 def check_id(self,msg):
@@ -97,7 +97,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
 
 
-    if update.message.chat.id == 1021794628:
+    if update.message.chat.id == Your managers chat ID:
 
         reply_markup = InlineKeyboardMarkup(keyboard1)
 
@@ -134,7 +134,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("1351667509:AAEuwMsB9mLuhWGuWzaT0eOadVMXU_hGXss", use_context=True)
+    updater = Updater("Your Bot's token", use_context=True)
 
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CallbackQueryHandler(button))
