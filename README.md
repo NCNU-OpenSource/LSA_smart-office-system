@@ -422,4 +422,6 @@ dooropen(servo1)
 * ``` pipenv run python office_bot_control.py```
 
 ## 運行pi的python檔案
-* 
+* ``` cd officetool ```
+* ``` python office_start.py ```
+* 這樣就完成囉!
