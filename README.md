@@ -8,14 +8,13 @@
 
 ## 動機
 
-- 組內成員們在企業實習的過程中，遇到的一些小困擾問題，產生的一個小小Bot系統去讓這些懶惰的人更快樂地懶惰下去。
-- 困擾(故事)  
-   - A同學在人事部實習，每個月都要將辦公室內所有人的出勤卡上下班時間，一張一張的打進excel裡面然後再製作薪資表單。  
-   - B同學在機房實習，機房內外都沒有窗戶，樓層又高，中午吃飯的時候常要搭好久的電梯下去，如果遇上外頭下雨又要搭好久的電梯上樓。  
-   - C同學家離公司有一大段距離，常常騎到公司附近之後才覺得很冷應該多穿一件衣服，但有時運氣不好，多穿一件衣服時又覺得熱。  
-   - A、C同學的辦公室內冷氣開放都是由主管管控，但很常因為主管不在位置上沒人去開冷氣覺得很熱，希望室內溫度超過設定溫度時自動開啟冷氣。  
-   - D同學聽著同學們的種種抱怨，熱心的他決定來幫大家解決這些小困擾！  
-   
+- 組內成員們在企業實習的過程中，遇到的一些小困擾問題，產生的一個小小 Bot 系統去讓這些懶惰的人更快樂地懶惰下去。
+- 困擾(故事)
+  - A 同學在人事部實習，每個月都要將辦公室內所有人的出勤卡上下班時間，一張一張的打進 excel 裡面然後再製作薪資表單。
+  - B 同學在機房實習，機房內外都沒有窗戶，樓層又高，中午吃飯的時候常要搭好久的電梯下去，如果遇上外頭下雨又要搭好久的電梯上樓。
+  - C 同學家離公司有一大段距離，常常騎到公司附近之後才覺得很冷應該多穿一件衣服，但有時運氣不好，多穿一件衣服時又覺得熱。
+  - A、C 同學的辦公室內冷氣開放都是由主管管控，但很常因為主管不在位置上沒人去開冷氣覺得很熱，希望室內溫度超過設定溫度時自動開啟冷氣。
+  - D 同學聽著同學們的種種抱怨，熱心的他決定來幫大家解決這些小困擾！
 
 ## 功能
 
@@ -26,6 +25,8 @@
 5. 辨公室人事部同事能查看同事上下班刷卡紀錄
 
 ## 使用設備
+
+1. Raspberry pi 3
 
    <img src="https://i.imgur.com/eWJEnu0.png" width="375">
 
@@ -45,11 +46,10 @@
 | SCK        | Pin23             |
 | SAD        | Pin24             |
 
-
 2. L9110 風扇模組
 
-    <img src="https://i.imgur.com/i2cEcnK.png" width="375">
-    
+<img src="https://i.imgur.com/i2cEcnK.png" width="375">
+
 | 風扇模組 接口 | Raspberry Pi 接口 |
 | ------------- | ----------------- |
 | VCC (5v)      | 麵包板 +          |
@@ -57,9 +57,10 @@
 | INA           | Pin 16            |
 | INB           | Pin 18            |
 
-3. 雨水檢測 
-- MH-RD - 
-   <img src="https://i.imgur.com/9czppqf.png" width="375">
+3. 雨水檢測
+
+- MH-RD -
+  <img src="https://i.imgur.com/9czppqf.png" width="375">
   | KY-016 接口 | Raspberry Pi 接口 |
   | -------- | -------- |
   | VCC (3.3v) | Pin 1 |
@@ -94,10 +95,9 @@
 | L9110    | NT$150 | 訊號展示     |
 
 - breadboard layout:
-<img src="https://i.imgur.com/QztGPV8.jpg" width="375">
+  <img src="https://i.imgur.com/QztGPV8.jpg" width="375">
 
 ## 使用技術
-
 
 ## RFID 門禁系統實作
 
@@ -270,37 +270,37 @@ dooropen(servo1)
 - 1. 先建立專案
      - <img src="https://i.imgur.com/WH4NpNY.png" width="375">
 - 點選左上方選取專案
-     - <img src="https://i.imgur.com/quT1GeJ.png" width="375">
+  - <img src="https://i.imgur.com/quT1GeJ.png" width="375">
 - 建立一個專案
-     - <img src="https://i.imgur.com/fHpnzcv.png" width="375">
+  - <img src="https://i.imgur.com/fHpnzcv.png" width="375">
 - 確認切換專案成功
-     - <img src="https://i.imgur.com/WWsuase.png" width="375">
+  - <img src="https://i.imgur.com/WWsuase.png" width="375">
 - 2. 啟用 Google Sheet API, 點選 ENABLE APPS AND SERVICES
      - <img src="https://i.imgur.com/XoUn7oE.png" width="375">
 - 找一下 google sheet
-     - <img src="https://i.imgur.com/IqwnfwD.png" width="375">
+  - <img src="https://i.imgur.com/IqwnfwD.png" width="375">
 - 啟用
-   - <img src="https://i.imgur.com/TnSGjl6.png" width="375">
+  - <img src="https://i.imgur.com/TnSGjl6.png" width="375">
 - 3. 新增憑證, 切換到憑證的頁面點選建立憑證的服務帳戶
      - <img src="https://i.imgur.com/KzblyuY.png" width="375">
 - 沒有特殊需求就可以直接按繼續
-     - <img src="https://i.imgur.com/QmrYUBR.png" width="375">
+  - <img src="https://i.imgur.com/QmrYUBR.png" width="375">
 - 這邊也是，沒有特殊需求就可以直接按繼續
-     - <img src="https://i.imgur.com/IGq9Nav.png" width="375">
+  - <img src="https://i.imgur.com/IGq9Nav.png" width="375">
 - 建立完成後應該會有多一個服務帳戶點擊那個服務帳戶
-     - <img src="https://i.imgur.com/Td7Bncq.png" width="375">
+  - <img src="https://i.imgur.com/Td7Bncq.png" width="375">
 - 新增金鑰
-     - <img src="https://i.imgur.com/rYcdn7y.png" width="375">
+  - <img src="https://i.imgur.com/rYcdn7y.png" width="375">
 - 選擇 JSON
-     - <img src="https://i.imgur.com/HWVm0Is.png" width="375">
+  - <img src="https://i.imgur.com/HWVm0Is.png" width="375">
 - 他會自動幫你下載下來, 請把他重新命名為 auth.json 並放到 googlesheet_update.py 同一目錄下
-     - <img src="https://i.imgur.com/Wpb2q6S.png" width="375">
+  - <img src="https://i.imgur.com/Wpb2q6S.png" width="375">
 
 ### Google Sheet API 開啟權限
 
-- 1. 點選共用 
+- 1. 點選共用
      - <img src="https://i.imgur.com/FrItZhu.png" width="375">
-- 2. 輸入你剛剛申請的服務帳號信箱地址 
+- 2. 輸入你剛剛申請的服務帳號信箱地址
      - <img src="https://i.imgur.com/K0cGABK.png" width="375">
 
 ### API 串接
@@ -309,9 +309,9 @@ dooropen(servo1)
 - `pip install gspread`
 - `pip install oauth2client`
 - 查找 google sheet 網址, 將 google sheet 網址橘色地方複製
-     - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/BDhE4pn.png)
+  - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/BDhE4pn.png)
 - 到`googlesheet_update.py`進行修改, 在第 17 行 spreadsheet_key_path 填入剛剛複製的紅色地方字串
-     - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/cJDREbz.png)
+  - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/cJDREbz.png)
 - 最後直接運行`googlesheet_update.py`就可自動同步 database 到 google sheet
 - `python3 googlesheet_update.py`
 
@@ -319,37 +319,39 @@ dooropen(servo1)
 
 1. 先在手機應用程式商店下載 Telegram Messenger
 
-     - <img src="https://i.imgur.com/7bTwXUU.jpg" width="375">
+   - <img src="https://i.imgur.com/7bTwXUU.jpg" width="375">
 
 2. 下載完成後申請帳號，再利用搜尋欄搜尋"BotFather"，並點擊 BotFather (注意:有藍勾的才是官方認證機器人!)
 
-     - <img src="https://i.imgur.com/tR8WB7K.jpg" width="375">
+   - <img src="https://i.imgur.com/tR8WB7K.jpg" width="375">
 
 3. 在對話中輸入"/start"
 
-     - <img src="https://i.imgur.com/epNi844.jpg" width="375">
+   - <img src="https://i.imgur.com/epNi844.jpg" width="375">
 
 4. 接著輸入"/newbot"建立新機器人
 
-     - <img src="https://i.imgur.com/rZpbY0Q.jpg" width="375">
+   - <img src="https://i.imgur.com/rZpbY0Q.jpg" width="375">
 
 5. 輸入"Your_Bot_Name"為機器人建立名稱
 
-     - <img src="https://i.imgur.com/o4qyzY0.jpg" width="375">
+   - <img src="https://i.imgur.com/o4qyzY0.jpg" width="375">
 
 6. 輸入"Your_Bot_ID"為機器人建立 user id (user id 為獨一無二，其他 user 能夠在搜尋欄輸入機器人 user id 並使用它)
-     - <img src="https://i.imgur.com/9e6IaN3.jpg" width="375">
+
+   - <img src="https://i.imgur.com/9e6IaN3.jpg" width="375">
 
 7. 完成以上步驟後，BotFather 會在訊息中給予一組 token，我們需要把 token 放在所需要的程式中並運行起來，這樣 Telegram Bot 的基本設定就完成囉!
 
-     - <img src="https://i.imgur.com/qLFsMHI.jpg" width="375">
-     
-## 在自身ubuntu主機設定 Mosquitto
-1. 安裝 Mosquitto ```sudo apt-get install mosquitto```
-2. 檢查是否順利安裝 ``` cd etc/mosquitto ```
-3. 在 conf檔案中新增2行Code ``` sudo vim mosquitto.conf  ```
-* ``` password_file /etc/mosquitto/passwd ```
-* ```allow anonymous true ```(為了方便運行而設成true)
-* broker的passwd的密碼耍有帳密才能進行訂閱
-* #allow anonymous false (不管自身publish還是subscribe的時侯都要有broker設定檔中的帳密)
+   - <img src="https://i.imgur.com/qLFsMHI.jpg" width="375">
 
+## 在自身 ubuntu 主機設定 Mosquitto
+
+1. 安裝 Mosquitto `sudo apt-get install mosquitto`
+2. 檢查是否順利安裝 `cd etc/mosquitto`
+3. 在 conf 檔案中新增 2 行 Code `sudo vim mosquitto.conf `
+
+- `password_file /etc/mosquitto/passwd`
+- `allow anonymous true `(為了方便運行而設成 true)
+- broker 的 passwd 的密碼耍有帳密才能進行訂閱
+- #allow anonymous false (不管自身 publish 還是 subscribe 的時侯都要有 broker 設定檔中的帳密)
