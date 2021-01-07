@@ -230,6 +230,10 @@ dooropen(servo1)
   - `sudo apt-get install sqlite3`
   - `sudo mkdir -m 777 ~/database`
 
+- 如資料庫不能寫入先將資料庫新增權限
+
+  - `sudo chmod 777 -R ~/database`
+
 - 新增員工
 
   - 運行 new_staff.py
