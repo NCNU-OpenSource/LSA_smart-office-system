@@ -356,10 +356,10 @@ dooropen(servo1)
 - 新增以下兩個程式碼
 - (1) `password_file /etc/mosquitto/passwd` 
 -----放帳號與密碼的檔案位置，需要自己創建在/etc/mosquitto底下，這裡的檔名設為passwd
-- (2) `allow anonymous true/false `
+- (2) `allow anonymous true`
 -----為了方便以下操作我們將它設成 true，如果將匿名設為false的話，不管是訂閱者或是推送者皆要輸入帳密才能向broker訂閱資料或推送資料，帳密儲存在broker的帳密檔內，也就是上面提到的路徑 
 - 補充設置帳密的方法:
-- `sudo vim /etc/mosquitto/passwd` ------ 創建一個存帳密檔案到mosquitto底下，passwd請改為你要的檔名
+- `sudo vim /etc/mosquitto/passwd` ------ 創建一個存帳密檔案到mosquitto底下，passwd請改為你要的檔名且要與conf檔內設定的名稱相同
 - 輸入 `sudo mosquitto_passwd [password_file_name] [user_name_that_you_want_to_set]` ----- 中括號請改成帳密檔案名稱與要設定的帳號名稱
 - 成功後需要輸入兩次要設定的密碼即完成
 - 到passwd看一下有沒有帳密，有的話即成功
