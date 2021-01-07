@@ -260,7 +260,7 @@ dooropen(servo1)
 - 上下班打卡紀錄
   - 假如上面步驟出現 Login successfully 後, database 資料夾內會自動生成一個 company_record.db 檔案
   - 將檔案匯出後使用[DB Browser for SQLite](https://sqlitebrowser.org/)瀏覽 company_record.db 檔案, 可發現已新增員工上下班紀錄
-  - <img src="https://i.imgur.com/gKfkUVK.png" >
+  - <img src="https://i.imgur.com/gKfkUVK.png">
 
 ## 匯出資料庫至 CSV
 
