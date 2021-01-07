@@ -375,7 +375,13 @@ dooropen(servo1)
 1. 在家目錄下建一個dir ``` mkdir officetool ```
 2. 進入officetool dir ``` cd officetool ```
 3. 安裝虛擬環境 pipenv ``` sudo apt install pipenv ```
-4. 利用虛擬環境安裝
+4. 利用虛擬環境安裝 python telegram bot ```pipenv install python-telegram-bot ```
+5. 輸入 ``` pipenv shell ```
+6. 把github office_bot_control資料夾中的 office_bot_control.py 放到 家目錄的officetool目錄中
+7. 更改office_bot_control.py中的ip地址為raseberrypi的ip地址(第43,34,26行)
+8. 再更改同樣檔案中的chatid改為manager的telegram chat id(第100行的your managers chat ID)
+- chat id可在telegram搜尋 userinfobot，按 /start後就會顥示自己的chat id
+9. 再更改同樣檔案中的token為自己機器人的token (第137行)
 
 ## 在pi 設定 mosquitto
 
@@ -411,3 +417,9 @@ dooropen(servo1)
 * fan_manul.py (第30行)
 * temp_control_fan.py (第29行)
 
+## 運行自己主機的python檔案
+* ```cd officetool```
+* ``` pipenv run python office_bot_control.py```
+
+## 運行pi的python檔案
+* 
