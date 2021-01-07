@@ -247,7 +247,6 @@ dooropen(servo1)
   - 成功後會出現 Login successfully 及 閘門將會打開
 
     - <img src="https://i.imgur.com/LWWpTLt.png" width="375">
-    - ![](https://i.imgur.com/UERC3uO.gif)
     - <img src="https://i.imgur.com/UERC3uO.gif" width="375">
 
   - 如非本公司資料庫內的員工, 將會出現 Login failed 及 閘門不會開啟
