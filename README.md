@@ -230,10 +230,6 @@ dooropen(servo1)
   - `sudo apt-get install sqlite3`
   - `sudo mkdir -m 777 ~/database`
 
-- 如資料庫不能寫入先將資料庫新增權限
-
-  - `sudo chmod 777 -R ~/database`
-
 - 新增員工
 
   - 運行 new_staff.py
@@ -260,7 +256,7 @@ dooropen(servo1)
 - 上下班打卡紀錄
   - 假如上面步驟出現 Login successfully 後, database 資料夾內會自動生成一個 company_record.db 檔案
   - 將檔案匯出後使用[DB Browser for SQLite](https://sqlitebrowser.org/)瀏覽 company_record.db 檔案, 可發現已新增員工上下班紀錄
-  - <img src="https://i.imgur.com/gKfkUVK.png">
+  - <img src="https://i.imgur.com/gKfkUVK.png" >
 
 ## 匯出資料庫至 CSV
 
@@ -357,7 +353,11 @@ dooropen(servo1)
 
 3. 在 conf 檔案中新增 2 行 Code `sudo vim mosquitto.conf ` (分別為放帳密的檔案的位置以及是否開啟匿名操作)
 - `password_file /etc/mosquitto/passwd` 
-放帳號與密碼的檔案，需要自己創建在/etc/mosquitto底下
+-----放帳號與密碼的檔案，需要自己創建在/etc/mosquitto底下，這裡的檔名設為passwd
 - `allow anonymous true/false `
-為了方便以下操作我們將它設成 true，如果將匿名設為false的話，不管是訂閱者或是推送者皆要輸入帳密才能向broker訂閱資料或推送資料，帳密儲存在broker的帳密檔內，也就是上面提到的路徑 
-- 
+-----為了方便以下操作我們將它設成 true，如果將匿名設為false的話，不管是訂閱者或是推送者皆要輸入帳密才能向broker訂閱資料或推送資料，帳密儲存在broker的帳密檔內，也就是上面提到的路徑 
+- 補充設置帳密的方法:
+- `sudo vim /etc/mosquitto/passwd` ------ 創建一個存帳密檔案到mosquitto底下，passwd請改為你要的檔名
+- 輸入 `sudo mosquitto_passwd [password_file_name] [user_name_that_you_want_to_set]` ----- 中括號請改成帳密檔案名稱與要設定的帳號名稱
+- 成功後需要輸入兩次要設定的密碼即完成
+- 到passwd看一下有沒有帳密，有的話即成功
