@@ -360,10 +360,9 @@ dooropen(servo1)
 - `sudo vim /etc/mosquitto/mosquitto.conf ` (開啟 conf 檔，位置在/etc/mosquitto 底下)
 - 新增以下兩個程式碼
 - (1) `password_file /etc/mosquitto/passwd`
-  -----放帳號與密碼的檔案位置，需要自己創建在/etc/mosquitto 底下，這裡的檔名設為 passwd
 - (2) `allow anonymous true`
   -----為了方便以下操作我們將它設成 true，如果將匿名設為 false 的話，不管是訂閱者或是推送者皆要輸入帳密才能向 broker 訂閱資料或推送資料，帳密儲存在 broker 的帳密檔內，也就是上面提到的路徑
-- 補充設置帳密的方法:
+- 設置帳密的方法:
 - `sudo vim /etc/mosquitto/passwd` ------ 創建一個存帳密檔案到 mosquitto 底下，passwd 請改為你要的檔名且要與 conf 檔內設定的名稱相同
 - 輸入 `sudo mosquitto_passwd [password_file_name] [user_name_that_you_want_to_set]` ----- 中括號請改成帳密檔案名稱與要設定的帳號名稱
 - 成功後需要輸入兩次要設定的密碼即完成
@@ -387,10 +386,6 @@ dooropen(servo1)
   -----放帳號與密碼的檔案位置，需要自己創建在/etc/mosquitto 底下，這裡的檔名設為 passwd
 - (2) `allow anonymous true`
   -----為了方便以下操作我們將它設成 true，如果將匿名設為 false 的話，不管是訂閱者或是推送者皆要輸入帳密才能向 broker 訂閱資料或推送資料，帳密儲存在 broker 的帳密檔內，也就是上面提到的路徑
-- 補充設置帳密的方法:
-- `sudo vim /etc/mosquitto/passwd` ------ 創建一個存帳密檔案到 mosquitto 底下，passwd 請改為你要的檔名且要與 conf 檔內設定的名稱相同
-- 輸入 `sudo mosquitto_passwd [password_file_name] [user_name_that_you_want_to_set]` ----- 中括號請改成帳密檔案名稱與要設定的帳號名稱
-- 成功後需要輸入兩次要設定的密碼即完成
-- 到 passwd 看一下有沒有帳密，有的話即成功
+- 設置帳密的方法同上(在365-369行)
 
 4. 安裝 mosquitto clients ``` sudo apt install mosquitto-clients ``` 
