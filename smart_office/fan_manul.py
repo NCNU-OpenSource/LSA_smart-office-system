@@ -27,7 +27,7 @@ def fan(d):
         GPIO.output(A1A, GPIO.LOW)
         GPIO.output(A1B, GPIO.LOW)
 
-with subprocess.Popen("mosquitto_sub -h 10.32.21.232 -t switch",shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:    
+with subprocess.Popen("mosquitto_sub -h [IP of broker that you subscribe control signal] -t switch",shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:    
     for line in p.stdout:
         fan(line) 
         
