@@ -349,7 +349,8 @@ dooropen(servo1)
 
 1. 安裝 Mosquitto `sudo apt-get install mosquitto`
 
-2. 檢查是否順利安裝 `cd etc/mosquitto` (看看這個資料夾底下有沒有設定檔)
+2. 檢查是否順利安裝 `cd etc/mosquitto` 
+- `ls` (看看這個資料夾底下有沒有設定檔)
 
 3. 在 conf 檔案中新增 2 行 Code 
 - `sudo vim /etc/mosquitto/mosquitto.conf ` (開啟conf檔，位置在/etc/mosquitto底下)
