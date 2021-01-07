@@ -26,7 +26,7 @@ def auto(mes):
         subprocess.Popen("python temp_control_fan_auto.py", shell=True)
     elif mes == "F":
         os.system('pkill -f temp_control_fan_auto.py')
-with subprocess.Popen("mosquitto_sub -h [broker's IP] -t auto_switch",shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:
+with subprocess.Popen("mosquitto_sub -h [IP of broker that you subscribe control signal] -t auto_switch",shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as p:
     for line in p.stdout:
         mes = str(line)
         mes = mes.strip("b")
