@@ -238,6 +238,7 @@ dooropen(servo1)
   - Now place your tag to write (用空白的 RFID 卡拍卡)
   - 完成後會出現 Data added successfully
   - <img src="https://i.imgur.com/DDJ1VwT.png" width="375">
+  - Database 内容
   - <img src="https://i.imgur.com/R3YIAOc.png" width="375">
 
 - 門禁系統
