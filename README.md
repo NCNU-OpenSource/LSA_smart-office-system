@@ -467,4 +467,5 @@ dooropen(servo1)
 - 這樣就完成囉!
 
 ## 實作影片
-* https://drive.google.com/drive/folders/1sEg-75xg8PgTcIEtWweyxgxL5-1WfaKw
+
+- [Office Genie 實作 Demo](https://youtube.com/playlist?list=PL8es5eWB61tF95OTtpaV4Ng4HUqOs0Cqk)
