@@ -96,22 +96,25 @@
 
 - breadboard layout:
   <img src="https://i.imgur.com/QztGPV8.jpg" width="375">
-  
+
 ## 使用軟體
-* Python
-* Telegram bot
-* Google
+
+- Python
+- Telegram bot
+- Google
 
 ## 使用技術
-* pipenv
-* google API
-* MQTT Broker
-* MQTT Client
-* *Module in python:
+
+- pipenv
+- google API
+- MQTT Broker
+- MQTT Client
+- \*Module in python:
+
 1. Subprocess
 2. InlineKeyboardButton, InlineKeyboardMarkup, Update
-3. Logging 
-4. OS 
+3. Logging
+4. OS
 5. Sqlite3
 6. RPi.GPIO
 7. Gspread
@@ -123,6 +126,7 @@
 ## RFID 門禁系統實作
 
 ### 開啟 Raspberry Pi 的 SPI
+
 - 進入 Raspberry Pi Config
   - `sudo raspi-config`
 - Interfacing Options
@@ -337,6 +341,17 @@ dooropen(servo1)
 - 最後直接運行`googlesheet_update.py`就可自動同步 database 到 google sheet
 - `python3 googlesheet_update.py`
 
+### Google Sheet 更新自動化
+
+- 使用 crontab
+- 輸入`crontab -e`進行編輯
+- 在文件最底新增一行
+- `0 0 * * * /usr/bin/python3 ~/smart_office/googlesheet_update.py`
+- 代表每晚於凌晨 12 點自動執行一次更新打卡紀錄的 Python 檔案
+- 接著啟動服務
+- `service cron start`
+- 啟用完成
+
 ## 建立 Telegram Bot
 
 1. 先在手機應用程式商店下載 Telegram Messenger
@@ -388,22 +403,24 @@ dooropen(servo1)
 - 成功後需要輸入兩次要設定的密碼即完成
 - 到 passwd 看一下有沒有帳密，有的話即成功
 
-4. 安裝 mosquitto clients ``` sudo apt install mosquitto-clients ``` 
+4. 安裝 mosquitto clients `sudo apt install mosquitto-clients`
 
 ## 在自身 ubuntu 主機設定 python
 
-1. 在家目錄下建一個dir ``` mkdir officetool ```
-2. 進入officetool dir ``` cd officetool ```
-3. 安裝虛擬環境 pipenv ``` sudo apt install pipenv ```
-4. 利用虛擬環境安裝 python telegram bot ```pipenv install python-telegram-bot ```
-5. 輸入 ``` pipenv shell ```
-6. 把github office_bot_control資料夾中的 office_bot_control.py 放到 家目錄的officetool目錄中
-7. 更改office_bot_control.py中的ip地址為raseberrypi的ip地址(第43,34,26行)
-8. 再更改同樣檔案中的chatid改為manager的telegram chat id(第100行的your managers chat ID)
-- chat id可在telegram搜尋 userinfobot，按 /start後就會顥示自己的chat id
-9. 再更改同樣檔案中的token為自己機器人的token (第137行)
+1. 在家目錄下建一個 dir `mkdir officetool`
+2. 進入 officetool dir `cd officetool`
+3. 安裝虛擬環境 pipenv `sudo apt install pipenv`
+4. 利用虛擬環境安裝 python telegram bot `pipenv install python-telegram-bot `
+5. 輸入 `pipenv shell`
+6. 把 github office_bot_control 資料夾中的 office_bot_control.py 放到 家目錄的 officetool 目錄中
+7. 更改 office_bot_control.py 中的 ip 地址為 raseberrypi 的 ip 地址(第 43,34,26 行)
+8. 再更改同樣檔案中的 chatid 改為 manager 的 telegram chat id(第 100 行的 your managers chat ID)
 
-## 在pi 設定 mosquitto
+- chat id 可在 telegram 搜尋 userinfobot，按 /start 後就會顥示自己的 chat id
+
+9. 再更改同樣檔案中的 token 為自己機器人的 token (第 137 行)
+
+## 在 pi 設定 mosquitto
 
 1. 先安裝 Mosquitto broker `sudo apt-get install mosquitto`
 
@@ -419,29 +436,32 @@ dooropen(servo1)
   -----放帳號與密碼的檔案位置，需要自己創建在/etc/mosquitto 底下，這裡的檔名設為 passwd
 - (2) `allow anonymous true`
   -----為了方便以下操作我們將它設成 true，如果將匿名設為 false 的話，不管是訂閱者或是推送者皆要輸入帳密才能向 broker 訂閱資料或推送資料，帳密儲存在 broker 的帳密檔內，也就是上面提到的路徑
-- 設置帳密的方法同上(在365-369行)
+- 設置帳密的方法同上(在 365-369 行)
 
-4. 安裝 mosquitto clients ``` sudo apt install mosquitto-clients ``` 
+4. 安裝 mosquitto clients `sudo apt install mosquitto-clients`
 
 ## Raseberrypi 設置 pythpn
 
-1. 安裝python3 ```sudo apt install python3``` 
+1. 安裝 python3 `sudo apt install python3`
 
-2. 在家目錄建立dir ```mkdir officetool```
+2. 在家目錄建立 dir `mkdir officetool`
 
-3. 進入新建的dir ```cd officetool ```
+3. 進入新建的 dir `cd officetool `
 
-4. 把github中smart_office資料夾中的11個python檔案存放在officetool
+4. 把 github 中 smart_office 資料夾中的 11 個 python 檔案存放在 officetool
 
-5. 手動更改以下兩個檔案中的ip地址為運行telegram bot的那台ip地址 
-* fan_manul.py (第30行)
-* temp_control_fan.py (第29行)
+5. 手動更改以下兩個檔案中的 ip 地址為運行 telegram bot 的那台 ip 地址
 
-## 運行自己主機的python檔案
-* ```cd officetool```
-* ``` pipenv run python office_bot_control.py```
+- fan_manul.py (第 30 行)
+- temp_control_fan.py (第 29 行)
 
-## 運行pi的python檔案
-* ``` cd officetool ```
-* ``` python office_start.py ```
-* 這樣就完成囉!
+## 運行自己主機的 python 檔案
+
+- `cd officetool`
+- ` pipenv run python office_bot_control.py`
+
+## 運行 pi 的 python 檔案
+
+- `cd officetool`
+- `python office_start.py`
+- 這樣就完成囉!
