@@ -465,3 +465,6 @@ dooropen(servo1)
 - `cd officetool`
 - `python office_start.py`
 - 這樣就完成囉!
+
+## 實作影片
+* https://drive.google.com/drive/folders/1sEg-75xg8PgTcIEtWweyxgxL5-1WfaKw
