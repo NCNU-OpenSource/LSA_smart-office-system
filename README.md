@@ -96,13 +96,33 @@
 
 - breadboard layout:
   <img src="https://i.imgur.com/QztGPV8.jpg" width="375">
+  
+## 使用軟體
+* Python
+* Telegram bot
+* Google
 
 ## 使用技術
+* pipenv
+* google API
+* MQTT Broker
+* MQTT Client
+* *Module in python:
+1. Subprocess
+2. InlineKeyboardButton, InlineKeyboardMarkup, Update
+3. Logging 
+4. OS 
+5. Sqlite3
+6. RPi.GPIO
+7. Gspread
+8. Time
+9. Adafruit_DHT
+10. STDOUT, check_output
+11. Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
 ## RFID 門禁系統實作
 
 ### 開啟 Raspberry Pi 的 SPI
-
 - 進入 Raspberry Pi Config
   - `sudo raspi-config`
 - Interfacing Options
