@@ -349,7 +349,7 @@ dooropen(servo1)
 - `0 0 * * * /usr/bin/python3 ~/smart_office/googlesheet_update.py`
 - 代表每晚於凌晨 12 點自動執行一次更新打卡紀錄的 Python 檔案
 - 接著啟動服務
-- `service cron start`
+- `sudo service cron start`
 - 啟用完成
 
 ## 建立 Telegram Bot
