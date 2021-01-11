@@ -333,7 +333,7 @@ dooropen(servo1)
 
 - 先在 pi 安裝套件
 - `pip install gspread`
-- `pip install oauth2client`
+- `sudo pip install --upgrade oauth2client`
 - 查找 google sheet 網址, 將 google sheet 網址橘色地方複製
   - <img src="https://i.imgur.com/gKfkUVK.png" width="375">![](https://i.imgur.com/BDhE4pn.png)
 - 到`googlesheet_update.py`進行修改, 在第 17 行 spreadsheet_key_path 填入剛剛複製的紅色地方字串
