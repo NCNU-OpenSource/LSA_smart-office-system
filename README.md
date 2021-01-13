@@ -412,7 +412,7 @@ dooropen(servo1)
 3. 安裝虛擬環境 pipenv `sudo apt install pipenv`
 4. 利用虛擬環境安裝 python telegram bot `pipenv install python-telegram-bot `
 5. 輸入 `pipenv shell`
-6. 把 github office_bot_control 資料夾中的 office_bot_control.py 放到 家目錄的 officetool 目錄中
+6. 把 github officetool 資料夾中的 office_bot_control.py 放到 家目錄的 officetool 目錄中
 7. 更改 office_bot_control.py 中的 ip 地址為 raseberrypi 的 ip 地址(第 43,34,26 行)
 8. 再更改同樣檔案中的 chatid 改為 manager 的 telegram chat id(第 100 行的 your managers chat ID)
 
