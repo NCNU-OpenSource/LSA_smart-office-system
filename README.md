@@ -440,7 +440,7 @@ dooropen(servo1)
 
 4. 安裝 mosquitto clients `sudo apt install mosquitto-clients`
 
-## Raseberrypi 設置 pythpn
+## Raseberrypi 設置 python
 
 1. 安裝 python3 `sudo apt install python3`
 
@@ -462,7 +462,7 @@ dooropen(servo1)
 
 ## 運行 pi 的 python 檔案
 
-- `cd officetool`
+- `cd smart_office`
 - `python office_start.py`
 - 這樣就完成囉!
 
